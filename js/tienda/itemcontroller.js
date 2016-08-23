@@ -1,3 +1,4 @@
+var backendUrl = 'http://localhost:8888/pop/ropa-backend/items.php';
 var app= angular.module('tienda',[]);
 
 
@@ -6,7 +7,7 @@ app.controller('ItemController',['$scope','$http', '$rootScope', function($scope
   	$scope.count=0;
   	$scope.numeroItems=0;
   	$scope.opcion=2;
-    $scope.url= "../dannart-backend/ropa/items.php";
+    $scope.url= backendUrl;
     $scope.select="Genero";
     $http.post($scope.url, {"catSexo":$scope.opcion, "seleccionaFiltro":$scope.select}).
      success(function(data, status) 
@@ -17,7 +18,7 @@ app.controller('ItemController',['$scope','$http', '$rootScope', function($scope
         })
      $scope.op=2;
 
-    $scope.url= "../dannart-backend/ropa/items.php";
+    $scope.url= backendUrl;
     $scope.select="Recientes";
     $http.post($scope.url, {"gender":$scope.op, "seleccionaFiltro":$scope.select}).
      success(function(data, status) 
