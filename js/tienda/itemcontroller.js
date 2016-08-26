@@ -1,4 +1,5 @@
-var backendUrl = 'http://localhost:8888/pop/ropa-backend/items.php';
+var backendUrl = 'http://micrositios.chailate.com/pop-backend/demo-tienda-back/';
+//var backendUrl = 'http://localhost:8888/pop/ropa-backend/items.php';
 var app= angular.module('tienda',[]);
 
 
